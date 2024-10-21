@@ -1,0 +1,394 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon"  href="{% static 'assets/images/me2.png' %}">
+    <title>Taha saity - Main</title>
+
+    <!-- Bootstrap core CSS -->
+ 
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-eduwell-style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--
+
+TemplateMo 573 EduWell
+
+https://templatemo.com/tm-573-eduwell
+
+-->
+<style>
+  .w3-light-grey  nav{
+    width: 1%;
+    transition: width 1s ease-in-out;
+  }
+  .active.gradient-border span{
+    color:  rgb(42, 42, 152);
+    
+  }
+  .active.gradient-border {
+    scale: 1.02;
+    
+    box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.529);
+    transition: 0.2s ease-in-out;
+  }
+  #butmain {
+   
+    background-color: rgb(41, 68, 140); color: aliceblue; border-radius:15px ; padding: 20px; box-shadow: 0px 2px 5px gray ;transition:  0.2s ease-in-out;
+  }
+  #butmain:hover{
+    box-shadow: 0px 4px 10px gray ;
+    scale: 1.2;
+    background-color: rgb(67, 97, 181);
+  }
+
+  .proj{
+    margin: 5px;
+    transition:  0.2s ease-in-out;
+    border: 0px solid rgba(128, 128, 128, 0.533); border-radius:20px; box-shadow: 0px 1px 10px rgba(128, 128, 128, 0.17); margin-top: 50px; height: 170px;  padding: 10px; width:170px; display: flex; flex-direction: column; justify-content: center; text-align: center;
+  }
+  .proj:hover{
+    box-shadow: 0px 2px 15px rgba(128, 128, 128, 0.501) ;
+    scale: 1.01;
+    border-radius: 20px;
+    
+  }
+</style>
+  </head>
+
+<body>
+
+
+ 
+  <!-- ***** Main Banner Area Start ***** -->
+  <section style="padding-top: 110px;" class="main-banner" id="top">
+    {% for message in messages %}
+    
+    <div style="max-width: 700px; margin-left: auto; margin-right: auto; text-align: center; " class="alert alert-warning alert-dismissible">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      {{message}}
+    </div>
+   
+    {% endfor %}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="header-text">
+            <h4 style="font-weight: 500;">I'm <b>Taha Alsaity</b> <br> IT Networking Student and Junior<br> backend developer</h4>
+            <h2>Scroll down to know more <em style="color: rgb(39, 135, 135);">About Me!</em></h2>
+            <div class="main-button-gradient">
+              <div  ><a id="butmain"  style="" href="#services">Start Now!</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="{% static 'assets/images/me2.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h6>Here are </h6>
+            <h4>My <em style="color: rgb(31, 59, 158);">Skills</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/html.webp' %}" alt="">
+                </div>
+                <h4>HTML</h4>
+                 </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/css.png' %}" alt="">
+                </div>
+                <h4>CSS</h4>
+                 </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/js.webp' %}" alt="">
+                </div>
+                <h4>JavaScript</h4>
+               </div>
+            </div>
+
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/dj1.png' %}" alt="">
+                </div>
+                <h4>Django Framework</h4>
+                </div>
+            </div>
+          
+           
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/docker.png'%}" alt="">
+                </div>
+                <h4>Docker</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<nav class="scroll-sec" style=" margin-top: 50px; height: 50vh; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 100px;">
+  <label for="">HTML</label>
+      <div class="w3-light-grey w3-round">
+        <nav data-width="95%" id="b1" class="w3-container w3-round w3-blue"  style="">0%</nav>
+      </div>
+      <label for="">Django</label>
+      <div class="w3-light-grey w3-round">
+        <nav data-width="60%" id="b2" class="w3-container w3-round w3-blue"  style="">0%</nav>
+      </div>
+      <label for="">JavaScript</label>
+      <div class="w3-light-grey w3-round">
+        <nav data-width="60%" id="b3" class="w3-container w3-round w3-blue" style="">0%</nav>
+      </div>
+      <label for="">CSS</label>
+      <div class="w3-light-grey w3-round">
+        <nav data-width="75%" id="b4" class="w3-container w3-round w3-blue" style="">0%</nav>
+      </div>
+</nav>
+    </div>
+  </section>
+
+  <section class="our-courses" id="courses">
+
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h6>You can visit </h6>
+          <h4>Some of my <em style="color: rgb(29, 72, 180);">Online Projects</em></h4> </div>
+      </div>
+      <div style=" flex-wrap: wrap; display: flex;  justify-content: space-around; min-height: 30vh;" class="col-lg-12">
+     
+     
+        <a href="https://h2o-production.up.railway.app/">
+        <div class="proj" style="" >
+        
+        <img src="{% static 'assets/images/h1.png' %}" style="max-width: 160px; min-width: 110px;" alt="">
+        
+        </div></a>
+
+
+
+
+
+      </div>
+    </div></div>
+
+
+
+
+
+
+    <div style="margin-top: 80px;" class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            
+            <h4> certifications and <em style="color: rgb(26, 26, 148);">experience</em></h4>
+  </div>
+        </div>
+        <div class="col-lg-12">
+          <div style="display: flex; justify-content: center; flex-wrap: wrap;  width: 100%;" class="naccs">
+            <div class="tabs">
+              <div class="row">
+                <div style="display: flex; flex-wrap: wrap;  width: 100%;" class="col-lg-3">
+                  <div style="  " class="menu">
+                    <a href="https://drive.google.com/file/d/1IBaqJ5jTxyetQOEHOpV9nk4UiugKF33o/view?usp=sharing"><div style=" border: 2px solid rgb(42, 42, 152);" class="active gradient-border"><span>fundamentals of Digital marketing from Google</span></div></a>
+                    <div style=" border: 2px solid rgb(42, 42, 152);" class="gradient-border"><span>Booking Flights and Hotel rooms with local company</span></div>
+                    <div style=" border: 2px solid rgb(42, 42, 152);" class="gradient-border"><span>Social media Graphic design with local company</span></div>
+                 
+                  </div>
+                </div>
+               
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section style=" display: flex; justify-content: center;" class="contact-us" id="contact-section">
+    <div class="container">
+      <div style="  width: 100%; display: flex ;justify-content:  center; height: 100vh; margin-left: 0px;" class="row">
+        <div style="  display: flex;  margin: 0px; justify-content: center;" class="col-lg-8">
+          
+          
+              
+              <div style=" margin-bottom: 20px; min-width: 270px;" class="col-lg-4 offset-lg-1">
+                <div class="contact-info">
+                  <div class="icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <h4>Phone</h4>
+                  <span style="color: rgb(0, 140, 255);">218-92-3709167</span>
+                </div>
+              </div>
+             
+           
+          </div>
+       
+        
+          <form style="   margin: 0px;" id="contact" action="{% url 'smail' %}" method="post">
+            {% csrf_token %}
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6 style="font-weight: 600; font-size: 1.5em; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Send <b style="color: rgb(22, 102, 155);">Email</b></h6>
+
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button style="" type="submit" id="form-submit" class="main-button-gradient">Send Message</button>
+                </fieldset>
+              </div>
+            
+          </form>
+        </div>
+        <div  class="col-lg-12">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram" style="color: #ba405e;"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" style="color: #297bcd;"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" style="color: #2327ad;"></i></a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <p style="color: rgba(121, 121, 121, 0.886);" class="copyright"> @ oct 2024<span  style=" margin-left: 15px; font-weight: 600;">powered by</span> <img src="{% static 'assets/images/eco3.png' %}" style=" padding-left:5px; width: 50px;" width="" alt="">
+          
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/tabs.js' %}"></script>
+    <script src="{% static 'assets/js/video.js' %}"></script>
+    <script src="{% static 'assets/js/slick-slider.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+    <script>
+      const mainsec = document.querySelector(".scroll-sec")
+      const secs = document.querySelectorAll(".w3-light-grey nav")
+      window.onscroll = function (){
+         if(window.scrollY >= mainsec.offsetTop - 400){
+          secs.forEach((sec) => {
+          sec.style.width = sec.dataset.width;
+          sec.innerHTML = (sec.dataset.width);
+            
+          });
+         }
+      }
+
+    </script>
+</body>
+
+</html>
