@@ -26,6 +26,9 @@ SECRET_KEY = 'django-insecure--w&$2jr7wg-uo#w$z@$4=t@d)t%uu$pnq0&0pwujt2tn8(3x^i
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = [
+    'https://myportfolio-production-71f0.up.railway.app/',  # Add your production URL
+]
 
 
 import os
