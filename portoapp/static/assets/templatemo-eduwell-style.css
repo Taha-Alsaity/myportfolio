@@ -28,12 +28,16 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
 /* 
 ---------------------------------------------
 reset
 --------------------------------------------- 
 */
+
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -209,7 +213,7 @@ section {
   line-height: 40px;
   font-size: 28px;
   font-weight: 900;
-  text-transform: capitalize;
+  text-transfor:lowercase;
   color: #111;
 }
 
@@ -511,7 +515,7 @@ section.our-courses .naccs {
 section.our-courses .naccs .menu div {
   padding: 15px 30px;
   text-align: center;
-  border-radius: 5px !important;
+  border-radius: 25px !important;
   margin-bottom: 40px;
   font-size: 20px;
   color: #111;
