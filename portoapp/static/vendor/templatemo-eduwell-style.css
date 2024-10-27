@@ -519,13 +519,13 @@ section.our-courses .naccs .menu div {
   border-radius: 25px !important;
   margin-bottom: 40px;
   font-size: 20px;
-  color: #ffffff;
-  background-color: #2833ae;
+  color: #000000;
+  background-color: #ffffff;
   cursor: pointer;
   vertical-align: middle;
   font-weight: 900;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  border: 3px solid rgba(227, 227, 227, 0.853);
+  border: 3px solid rgba(159, 159, 159, 0.853);
 }
 
 
