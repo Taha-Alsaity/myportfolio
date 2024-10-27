@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = [
-    'https://myportfolio-production-71f0.up.railway.app',  # Add your production URL
+    'taha-alsaity-portfolio.up.railway.app',  # Add your production URL
 ]
 
 
