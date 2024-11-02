@@ -2,6 +2,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.conf import settings
 from django.contrib import messages
+from .models import viewers
 
 
 
@@ -9,8 +10,11 @@ from django.contrib import messages
 
 
 def index(request):
-    return render(request,"porttem/index.html")
-
+    viewer = viewers.objects.get(id="1")
+    viewer.number =+ 1
+    viewer.save()
+    return render(request,"porttem/index.html",{"viewers":viewer})
+  
 
 def sending_email(request):
     if request.method == "POST":
@@ -25,6 +29,9 @@ def sending_email(request):
                 from_email=settings.DEFAULT_FROM_EMAIL,
                 recipient_list=[settings.DEFAULT_FROM_EMAIL],
             )
+            viewer = viewers.objects.get(id="1")
+            viewer.contacts =+ 1
+            viewer.save()
             messages.success(request,'Email was sent successfully')
             return redirect('index')
             
