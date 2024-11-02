@@ -1587,3 +1587,33 @@ body {
   }
 
 }
+#activi{
+  justify-content: space-between;
+  
+  
+  font-weight: 600; width: 150px; height: 150px; align-items: center;display: flex; flex-direction: column; 
+}
+#activi:hover{
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.103);
+  border-radius: 15px;
+  transition: 0.2s ease-in;
+}
+#acti_con{
+display: flex; flex-direction:row ;
+flex-wrap: wrap; justify-content: space-evenly;}
+@media (max-width: 450px){
+  #acti_con{
+    
+    flex-direction: column;
+    justify-content: center;
+  }
+  .acti_sec{
+    padding: 10px;
+  }
+  #activi{
+    
+    display: flex;
+   
+    width: 100%;
+  }
+}

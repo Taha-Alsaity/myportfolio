@@ -6,4 +6,5 @@ from django.db import models
 
 class viewers(models.Model):
     number = models.IntegerField()
+    unq_num = models.IntegerField(default=0)
     contacts = models.IntegerField()

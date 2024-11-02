@@ -11,7 +11,11 @@ from .models import viewers
 
 def index(request):
     viewer = viewers.objects.get(id="1")
-    viewer.number =+ 1
+    if not request.session.get('has_visited'):
+        viewer.unq_num += 1
+        request.session['has_visited'] = True
+
+    viewer.number += 1
     viewer.save()
     return render(request,"porttem/index.html",{"viewers":viewer})
   
@@ -30,7 +34,7 @@ def sending_email(request):
                 recipient_list=[settings.DEFAULT_FROM_EMAIL],
             )
             viewer = viewers.objects.get(id="1")
-            viewer.contacts =+ 1
+            viewer.contacts += 1
             viewer.save()
             messages.success(request,'Email was sent successfully')
             return redirect('index')
