@@ -1588,13 +1588,14 @@ body {
 
 }
 #activi{
-  justify-content: space-between;
-  
-  
-  font-weight: 600; width: 150px; height: 150px; align-items: center;display: flex; flex-direction: column; 
+  color: white;
+  justify-content: space-around;
+  border-radius: 15px;
+  background-color: #000000;
+  font-weight: 600; width: 200px; height: 170px; align-items: center;display: flex; flex-direction: column; 
 }
 #activi:hover{
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.103);
+  box-shadow: 0px 2px 8px rgba(142, 142, 142, 0.103);
   border-radius: 15px;
   transition: 0.2s ease-in;
 }
